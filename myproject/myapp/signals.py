@@ -19,3 +19,10 @@ def user_saved_handler(sender, instance, **kwargs):
 def user_saved_thread_handler(sender, instance, **kwargs):
     current_thread = threading.current_thread()
     print(f"Signal handler running in thread: {current_thread.name}")
+    
+
+
+# Signal Handler for Question 3: Demonstrating transaction handling
+@receiver(post_save, sender=User)
+def user_saved_transaction_handler(sender, instance, **kwargs):
+    print("Signal handler (transaction) executed.")
