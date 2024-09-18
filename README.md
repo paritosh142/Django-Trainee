@@ -9,7 +9,7 @@ This repository contains solutions to the questions related to Django Signals an
 ### Question 1: By default, are Django signals executed synchronously or asynchronously?
 **Answer**: By default, Django signals are executed synchronously. This means that the signal is triggered and executed before the next line of code in the caller function is run.
 
-- [Solution for Question 1: Synchronous or Asynchronous](question1_django_signal_sync_async.py)
+- [Solution for Question 1: Synchronous or Asynchronous](Solutions/question1_django_signal_sync_async.py)
 
 ### Question 2: Do Django signals run in the same thread as the caller?
 **Answer**: Yes, Django signals run in the same thread as the caller by default. This can be verified by comparing thread IDs between the signal and the caller.
