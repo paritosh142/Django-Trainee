@@ -14,12 +14,12 @@ This repository contains solutions to the questions related to Django Signals an
 ### Question 2: Do Django signals run in the same thread as the caller?
 **Answer**: Yes, Django signals run in the same thread as the caller by default. This can be verified by comparing thread IDs between the signal and the caller.
 
-- [Solution for Question 2: Same Thread](question2_django_signal_thread.py)
+- [Solution for Question 2: Same Thread](Solutions/question2_django_signal_thread.py)
 
 ### Question 3: By default, do Django signals run in the same database transaction as the caller?
 **Answer**: Yes, Django signals run in the same database transaction as the caller by default. This means if the caller's transaction fails, the actions taken by the signal handlers will also be rolled back.
 
-- [Solution for Question 3: Same Database Transaction](question3_django_signal_transaction.py)
+- [Solution for Question 3: Same Database Transaction](Solutions/question3_django_signal_transaction.py)
 
 ---
 
